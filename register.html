@@ -1,0 +1,82 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Register</title>
+<style>
+form{
+background-color:lightblue;
+padding:20px;
+margin:20px;
+border:solid;
+width:1000px;
+height:1000px;
+text-align:center;
+align-content: center;
+
+}
+form input{
+    text-decoration: none;
+    font-size: smaller;
+}
+form input{
+padding:20px;
+margin:20px;
+font-text:blue;
+
+}
+h2{
+    color:blueviolet;
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+body{
+    background-color: yellow;
+}
+h7{
+    background-color: aqua;
+    color:red;
+    font-size: 29px;
+}
+</style>
+</head>
+<body>
+    <h2>Fill This Form To Register An Account</h2>
+    <form action="connection.php" method="POST">
+        <label for="name">FistName(Jina la kwanza):</label>
+        <input type="text" id="name" name="Firstname" required><br><br>
+        <label for="name">SecondName(Jina la Kati):</label>
+        <input type="text" id="name" name="Secondname" required><br><br>
+        <label for="name">LastName(Jina la mwisho)</label>
+        <input type="text" id="name" name="LastName" required><br><br>
+
+<label for="number">Phone(Weka namba Simu):</label>
+        <input type="number" id="number" name="number" required><br><br>
+
+        <label for="email">Email(Weka emeli ya Simu):</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password(Weka namba siri):</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for ="sex">Select Sex(chagua jinsia yako)</label><br><br>
+        Male(ME)<input type="radio">
+        Female(KE)<input type="radio"><br>
+
+        <label for="role">Role(wewe ni nani kwa Mwanfunzi):</label>
+        <select id="role" name="role">
+            <option value="parent">Parent(Mzazi)</option>
+  <option value="parent"name="parent">Guardian(Mlezi)</option>
+  <option value="parent"name="parent">Students(Mwanafunzi)</option>
+  <option value="parent"name="parent">Brother(kaka wa mtoto)</option>
+  <option value="parent"name="parent">Others(mengineo)</option>
+            <option value="admin"name="admin">Admin(mkufunzi)</option>
+        </select><br><br><br><br>
+
+        <button name="save"><h7>SubMit(Tuma)</h7></button>
+    </form>
+</body>
+</html>
